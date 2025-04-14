@@ -46,7 +46,7 @@ I2C INTERFACE FOR SE050
 - Segment Control: Connect to the `_7LED` pins.
 
 EXAMPLE PIN CONFIGURATION (XDC FILE)
-
+```
 I2C Interface for ADT7420
 set_property PACKAGE_PIN <TMP_SCL_PIN> [get_ports tmp_scl] set_property IOSTANDARD LVCMOS33 [get_ports tmp_scl] set_property PULLUP true [get_ports tmp_scl]
 set_property PACKAGE_PIN <TMP_SDA_PIN> [get_ports tmp_sda] set_property IOSTANDARD LVCMOS33 [get_ports tmp_sda] set_property PULLUP true [get_ports tmp_sda]
@@ -60,7 +60,7 @@ set_property PACKAGE_PIN <ANODE_PIN_0> [get_ports anode[0]] set_property PACKAGE
 Repeat for all anode pins...
 set_property PACKAGE_PIN <SEGMENT_PIN_0> [get_ports _7LED[0]] set_property PACKAGE_PIN <SEGMENT_PIN_1> [get_ports _7LED[1]]
 Repeat for all segment pins...
-
+```
 Replace `<TMP_SCL_PIN>`, `<TMP_SDA_PIN>`, `<SE_SCL_PIN>`, `<SE_SDA_PIN>`, `<ANODE_PIN_0>`, `<ANODE_PIN_1>`, `<SEGMENT_PIN_0>`, `<SEGMENT_PIN_1>`, etc., with the actual pin numbers used in your hardware setup.
 
 MODULE PORTS
